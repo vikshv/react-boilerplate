@@ -35,7 +35,6 @@ module.exports = merge(config, {
     new ESLintPlugin({
       context: path.resolve(__dirname, 'src'),
       extensions: ['js', 'jsx'],
-      exclude: ['static'],
       quiet: false,
       lintDirtyModulesOnly: true,
       threads: true,
