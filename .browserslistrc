@@ -1,0 +1,9 @@
+[production]
+> 0.2%
+ie 11
+safari 10
+safari 11
+
+[development]
+last 1 chrome version
+last 1 firefox version

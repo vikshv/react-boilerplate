@@ -1,0 +1,4 @@
+dist/
+node_modules/
+packagehash.txt
+dev.config.js

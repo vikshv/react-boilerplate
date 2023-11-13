@@ -1,0 +1,69 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "react/css/typescript/webpack/eslint boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run install-changed && npm run start:webpack",
+    "build": "npm run install-changed && npm run build:webpack",
+    "start:webpack": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.config.js",
+    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src/**/*.{js,jsx,ts,tsx}",
+    "install-changed": "install-changed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikshv/react-boilerplate.git"
+  },
+  "author": "vikshv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vikshv/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/vikshv/react-boilerplate#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@teamsupercell/typings-for-css-modules-loader": "^2.5.2",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "babel-loader": "^9.1.3",
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.53.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-webpack": "^0.13.8",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-webpack-plugin": "^4.0.1",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
+    "html-webpack-plugin": "^5.5.3",
+    "install-changed": "^1.1.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "prettier": "^3.1.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

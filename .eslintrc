@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "airbnb-base",
+    "airbnb/rules/react",
+    "airbnb/hooks",
+    "prettier",
+    "./eslint/rules/base",
+    "./eslint/rules/prettier",
+    "./eslint/rules/react",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-typescript",
+    ".eslintrc-rules"
+  ],
+  "plugins": ["react", "prettier", "@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": { "config": "./webpack.config.js" }
+    },
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/ignore": ["\\.(scss|sass|css|svg|png)$"]
+  },
+  "globals": {}
+}

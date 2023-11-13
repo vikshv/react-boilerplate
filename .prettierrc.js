@@ -1,0 +1,21 @@
+module.exports = {
+  singleQuote: true,
+  jsxSingleQuote: true,
+  arrowParens: 'always',
+  printWidth: 120,
+  tabWidth: 2,
+  useTabs: false,
+  semi: true,
+  endOfLine: 'auto',
+  importOrder: [
+    '^react$',
+    '^react-redux$',
+    '^react-router-dom$',
+    '^classnames$',
+    '<THIRD_PARTY_MODULES>',
+    '^../',
+    '^./',
+  ],
+  importOrderSeparation: false,
+  importOrderSortSpecifiers: true,
+};
