@@ -6,8 +6,8 @@ interface AppProps {
   className?: string;
 }
 
-const App: React.FC<AppProps> = ({ className }) => {
+const Root: React.FC<AppProps> = ({ className }) => {
   return <div className={classNames(styles.root, className)}>Hello, App!</div>;
 };
 
-export default App;
+export default Root;

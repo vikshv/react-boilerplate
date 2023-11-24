@@ -15,6 +15,7 @@ module.exports = {
     '<THIRD_PARTY_MODULES>',
     '^../',
     '^./',
+    '^./style.mss$',
   ],
   importOrderSeparation: false,
   importOrderSortSpecifiers: true,

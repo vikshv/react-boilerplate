@@ -1,12 +1,12 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './containers/App';
+import Root from './containers/Root';
 
 const ROOT_ID = 'root';
 
 function renderApp() {
   const root = createRoot(document.getElementById(ROOT_ID));
-  root.render(<App />);
+  root.render(<Root />);
 }
 
 export default function start() {

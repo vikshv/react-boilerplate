@@ -1,7 +1,10 @@
 module.exports = {
   plugins: ['react'],
   rules: {
-    'react/function-component-definition': ['error', { namedComponents: 'function-expression' }],
+    'react/function-component-definition': [
+      'error',
+      { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' },
+    ],
     // 'react-hooks/exhaustive-deps': 'error',
     // 'react/button-has-type': 'off',
     // 'react/default-props-match-prop-types': 'error',
