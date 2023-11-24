@@ -13,6 +13,7 @@ module.exports = {
       },
     ],
 
+    'import/order': 'off',
     'import/extensions': 'error',
     'import/no-dynamic-require': 'error',
     'import/no-extraneous-dependencies': 'error',
